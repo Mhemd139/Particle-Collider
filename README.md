@@ -1,4 +1,4 @@
-## Visualization
+## Simulation
 
 Particle Collider
 
