@@ -52,6 +52,7 @@ class Particle:
         
 
     def update_pos(self):
+        self.speed +=0.1
         pos_x = self.pos[0] + self.dir[0] * self.speed
         pos_y = self.pos[1] + self.dir[1] * self.speed
         self.pos = (pos_x, pos_y)

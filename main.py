@@ -12,6 +12,7 @@ def main():
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("Particle Collider")
     clock = pygame.time.Clock()
+    speed = 2
 
     #background surface
     bg  = pygame.Surface((WIDTH , HEIGHT))
@@ -19,8 +20,7 @@ def main():
     frames =[]
     particles = []
     for i in range (0,80):
-        pos = (randint(620,660) , randint(310,340))
-        speed = randint(4,6)
+        pos = (randint(620,660) , randint(310,340)) 
         radius = 3
         particles.append(Particle(pos , (1,1),speed,radius,(255, 215 , 0)))
 
